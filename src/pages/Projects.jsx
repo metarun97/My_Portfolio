@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FiExternalLink } from "react-icons/fi";
-
+import { FiExternalLink } from 'react-icons/fi';
 
 const Projects = () => {
   const projects = [
@@ -8,15 +7,24 @@ const Projects = () => {
       title: 'Notes App',
       description:
         'A notes application where users can add, edit, delete notes with data stored in localStorage.',
-      tech: ['JavaScript', 'HTML', 'CSS'],
-      live: '#',
-      code: '#',
+      tech: ['JavaScript', 'HTML', 'CSS', 'Toastify JS'],
+      live: 'https://notes-app-metarun.vercel.app/',
+      code: 'https://github.com/metarun97/Notes_App',
     },
     {
       title: 'Weather App',
       description:
         'Weather forecast application using OpenWeather API with real-time search functionality.',
       tech: ['JavaScript', 'API', 'CSS'],
+      live: 'https://weather-app-metarun.vercel.app/',
+      code: 'https://github.com/metarun97/Weather_App',
+    },
+
+    {
+      title: 'E-Commerce Website',
+      description:
+        'A responsive e-commerce web app with product listing, cart functionality and category filtering.',
+      tech: ['React', 'Tailwind CSS', 'Context API', 'React Router'],
       live: '#',
       code: '#',
     },
@@ -28,17 +36,9 @@ const Projects = () => {
       live: '#',
       code: '#',
     },
-    {
-      title: 'E-Commerce Website',
-      description:
-        'A responsive e-commerce web app with product listing, cart functionality and category filtering.',
-      tech: ['React', 'Tailwind CSS', 'Context API', 'React Router'],
-      live: '#',
-      code: '#',
-    },
   ];
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-15 md:py-25">
       <div className="max-w-7xl mx-auto px-3 md:px-5 lg:px-6">
         {/* Heading */}
         <div className="text-center mb-14">
@@ -57,7 +57,9 @@ const Projects = () => {
               key={index}
               className="bg-[#F9FAFB] rounded-xl p-6 shadow-sm hover:shadow-lg transition"
             >
-              <h3 className="text-xl md:text-2xl lg:3xl font-semibold">{project.title}</h3>
+              <h3 className="text-xl md:text-2xl lg:3xl font-semibold">
+                {project.title}
+              </h3>
 
               <p className="mt-3 text-gray-600 text-sm md:text-lg lg:text-xl">
                 {project.description}
@@ -78,18 +80,18 @@ const Projects = () => {
               {/* Buttons */}
               <div className="mt-6 flex gap-4">
                 <Link
-                  href={project.live}
+                  to={project.live}
                   target="_blank"
                   className="text-sm flex items-center gap-x-1 sm:text-lg lg:text-xl font-medium text-blue-600 hover:underline"
                 >
-                  Live Demo <FiExternalLink/>
+                  Live Demo <FiExternalLink />
                 </Link>
                 <Link
-                  href={project.code}
+                  to={project.code}
                   target="_blank"
                   className="text-sm flex items-center gap-x-1 sm:text-lg lg:text-xl font-medium text-gray-700 hover:underline"
                 >
-                  GitHub <FiExternalLink/>
+                  GitHub <FiExternalLink />
                 </Link>
               </div>
             </div>

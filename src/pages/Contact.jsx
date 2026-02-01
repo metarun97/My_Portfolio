@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-15 md:py-20 lg:py-20">
       <div className="max-w-7xl mx-auto px-3 md:px-5 lg:px-6">
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold">Contact Me</h2>
           <p className="mt-3 md:text-lg lg:text-xl text-gray-600">
-            Feel free to reach out for opportunities or collaboration
+            Feel free to reach out for opportunities or collaboration.
           </p>
         </div>
 
