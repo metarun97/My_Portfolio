@@ -24,7 +24,7 @@ const Projects = () => {
       title: 'E-Commerce Website',
       description:
         'A responsive e-commerce web app with product listing, cart functionality and category filtering.',
-      tech: ['React', 'Tailwind CSS', 'Context API', 'React Router'],
+      tech: ['React', 'Tailwind CSS', 'Context API','Redux Toolkit', 'React Router'],
       live: '#',
       code: '#',
     },
